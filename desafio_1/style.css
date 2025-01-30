@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Be Vietnam Pro";
+  margin: 0;
+  overflow: auto;
+}
+.title {
+  font-weight: bold;
+  color: #121826;
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+
+#title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 23px;
+  background-color: rgba(128, 128, 128, 0.061);
+  padding-bottom: 30px;
+  border-bottom: 1px solid #4d556233;
+  width: 100%;
+  color: #4d5562;
+  background-image: "/bg-pattern.png";
+}
+
+#table-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+th {
+  color: #263fa9;
+  padding: 20px 2vw 40px 2vw;
+}
+
+td {
+  padding: 2vw;
+  border-bottom: 1px solid #4d556233;
+  text-align: center;
+  font-weight: 400;
+}
+
+.price {
+  font-weight: bold;
+  color: #121826;
+  font-size: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.per {
+  font-weight: 400;
+  color: #4d5562;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.prop {
+  padding-right: 75px;
+  font-weight: bold;
+  background-color: #f8fafc;
+  text-align: left !important;
+}
+
+button {
+  color: #263FA9;
+  font-weight: bold;
+  font-size: 17px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+}
+
+button:hover {
+  color: #121826;
+}
+
+.recomended .price,
+.recomended .per {
+  color: white !important;
+}
+
+.recomended {
+  background-color: #121826;
+  color: white !important;
+}
+
+.recomended-title {
+  border-radius: 10px 10px 0 0;
+}
+
+.button-recomended {
+  background-color: #7c4f1e;
+  border-radius: 0 0 10px 10px;
+}
+
+.button-recomended button {
+  color: white !important;
+  cursor: pointer;
+}
+
+.button-recomended button:hover {
+  color: #121826 !important;
+}
+
+#popular {
+  background-color: #263fa9;
+  border-radius: 20px;
+  margin: 0 20px 0 20px;
+}
+
+#table-section-responsive{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+  .title {
+    font-size: 5vw;
+  }
+
+  #title-section {
+    font-size: 3vw;
+  }
+
+  .view {
+    display: none;
+  }
+  .price{
+    font-size: 5vw;
+  }
+  button{
+    font-size: 1.8vw;
+  }
+
+  th {
+    padding: 20px 1vw 40px 1vw;
+    max-width: 20vw;
+    font-size: 2vw;
+  }
+  
+  td {
+    padding: 1vw;
+    max-width: 20vw;
+    font-size: 2vw;
+  }
+  #popular {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .prop {
+    padding-right: 5vw;
+    white-space: nowrap;
+    font-size: 2vw;
+  }
+}
+/*Tamaño de pantalla 700px maximo */
+@media (max-width: 640px) {
+  .view-menor {
+    display: none;
+  }
+
+  #table-section {
+    display: block;
+    margin-left: 18vw;
+
+  }
+
+  table tbody tr {
+    display: grid;
+    grid-template-columns: 56% 50% 60%; /* Tres columnas */
+    gap: 0;
+  }
+
+  table tbody tr td:nth-child(3) {
+    order: 2; /* Segunda columna */
+  }
+
+  table tbody tr td:nth-child(4) {
+    order: 1; /* Tercera columna: aparece antes */
+  }
+
+  table thead tr {
+    display: grid;
+    grid-template-columns: 56% 50% 60%;
+    gap: 0;
+  }
+
+  table thead th:nth-child(3) {
+    order: 2;
+  }
+
+  table thead th:nth-child(4) {
+    order: 1;
+  }
+  .per{
+    font-size: 2vw;
+  }
+}

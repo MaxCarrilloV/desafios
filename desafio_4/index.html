@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <title>QR code generator | devChallenges.io</title>
+    
+  </head>
+  <body>
+    <div class="main">
+      <img id="logo" src="./resources/Logo.svg" alt="">
+      <div class="input-container">
+        <input type="text" id="qr" placeholder="Enter an url">
+        <button id="generate">QR code</button>
+      </div>
+      <div class="circle"><div id="qrcode"></div></div>
+      <div id="buttons">
+        <button id="download" >Download <img src="./resources/Load_circle_duotone.svg" alt="load"></button>
+        <button id="share">share <img src="./resources/link_alt.svg" alt="share"></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

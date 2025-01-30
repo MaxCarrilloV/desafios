@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name=description content="Device shop practice design">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon" sizes="any">
+    <title>Device Shop Checkout</title>
+  </head>
+  <body>
+    <header id="heading">
+      <h3>Checkout</h3>
+      <span id="items">3 ITEMS</span>
+    </header>
+    <main id="cart_info">
+      <section id="device_section">
+        <article class="device">
+          <p class="image_content">
+            <img src="./resources/Gold.png" alt="" width="50" />
+          </p>
+          <aside class="info_device">
+            <article class="device_title">
+              <h4>IPhone 12 Pro</h4>
+              <span class="price">$999.00</span>
+            </article>
+            <p class="color">Golden</p>
+            <article class="device_delete">
+              <p class="cuantity">x 1</p>
+              <button class="delete">X</button>
+            </article>
+          </aside>
+        </article>
+        <article class="device">
+          <p class="image_content">
+            <img src="./resources/Apple-watch.png" alt="" width="50" />
+          </p>
+          <aside class="info_device">
+            <article class="device_title">
+              <h4>Apple Watch</h4>
+              <span class="price">$399.00</span>
+            </article>
+
+            <p class="color">Blue</p>
+            <article class="device_delete">
+              <p class="cuantity">x 1</p>
+              <button class="delete">X</button>
+            </article>
+          </aside>
+        </article>
+        <article class="device">
+          <p class="image_content">
+            <img id="mac" src="./resources/iMac.png" alt="" width="50" />
+          </p>
+          <aside class="info_device">
+            <article class="device_title">
+              <h4>Apple Watch</h4>
+              <span class="price">$1199.00</span>
+            </article>
+
+            <p class="color">Green</p>
+            <article class="device_delete">
+              <p class="cuantity">x 1</p>
+              <button class="delete">X</button>
+            </article>
+          </aside>
+        </article>
+        <hr id="line" />
+        <article id="coupon">
+          <input type="text" placeholder="Enter coupon code" />
+          <button>Apply Coupon</button>
+        </article>
+        <article >
+          <aside class="price_section">
+            <p class="price_text">Sub total</p>
+            <p class="price_text">$2597.00</p>
+          </aside>
+          <aside class="price_section"> 
+            <p class="price_text">Tax</p>
+            <p class="price_text">$623.28</p>
+          </aside>
+          <aside class="price_section">
+            <p class="total">Total</p>
+            <p class="total">$3220.28</p>
+          </aside>
+        </article>
+      </section>
+      <section id="contact_section">
+        <h4>Contact information</h4>
+        <form id="form_section">
+          <label >First & Last name</label>
+          <input type="text" placeholder="Enter first & last name">
+          <label >Email Address</label>
+          <input type="text" placeholder="Enter email address">
+          <aside>
+            <label >Country</label>
+            <label >Postal Code</label>
+            <select name="" id="">
+              <option value="Finland">Finland</option>
+            </select>
+            <input type="text" placeholder="00270">
+          </aside>
+          <button id="continue">Continue</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

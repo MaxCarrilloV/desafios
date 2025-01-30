@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Outfit", serif;
+}
+
+.main{
+    background-image: url('./resources/qa-bg-small.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo{
+    margin-top: 30px;
+}
+
+input::placeholder{
+    color: #FAFAF9;
+}
+
+input:focus-visible{
+    outline: none;
+    border-color: #0d31c3;
+}
+
+.input-container {
+    position: relative;
+    width: 40vw;
+}
+
+.input-container input {
+    height: fit-content;
+    border:2px solid #263FA9;
+    border-radius: 8px;
+    width: 40vw;
+    padding: 15px;
+    background-color: #030616;
+    color: #FAFAF9;
+    margin-top: 30px;/* Espacio para el botón */
+}
+
+.input-container button {
+    position: absolute;
+    right: -26px;
+    top: 36px;
+    padding: 10px 30px;
+    background-color: #263FA9;
+    color: #FAFAF9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
+}
+
+#qrcode{
+    display: none;
+    padding: 30px;
+    background-color: #F2F5F9;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.circle{
+    display: none;
+    margin-top: 60px;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #F8FAFC1A, #F8FAFC1A);
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons{
+    display: none;
+    margin-top: 20px;
+}
+
+#buttons button, #buttons a{
+    display: flex;
+    padding: 10px 40px;
+    background-color: #263FA9;
+    color: #FAFAF9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    margin-inline: 20px;
+}
+#buttons a{
+    text-decoration: none;
+}
+
+
+@media(max-width:1024px){
+    .main{
+        background-size: 100vw 100vh;
+    }
+    .input-container {
+        position: relative;
+        width: 70vw;
+    }
+    .input-container input {
+        width: 70vw;
+    }
+    .input-container button {
+        right: -25px;
+    }
+    .circle{
+        margin-top: 60px;
+        width: 310px;
+         height: 310px;
+    }
+}
+
+@media(max-width:640px){
+    .main{
+        background-size: 100vw 100vh;
+    }
+    .input-container {
+        position: relative;
+        width: 90vw;
+    }
+    .input-container input {
+        width: 86vw;
+    }
+    .input-container button {
+        right: -3px;
+    }
+}
